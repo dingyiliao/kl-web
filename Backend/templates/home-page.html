@@ -1,0 +1,99 @@
+{% extends 'layout.html' %}
+
+{% block headstyle %}
+
+<style>
+    .input-component,
+    .image-component {
+        justify-content: center;
+    }
+
+    .image-component {
+        margin-top: 6em;
+        margin-left: 7px
+    }
+
+    .input-component {
+        margin-top: 4em;
+    }
+
+    .card-component {
+        margin-top: 4em;
+    }
+</style>
+
+{% endblock %}
+
+{% block body %}
+
+<div class="container">
+    <div class="row image-component">
+        <div class="col-md-3">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" height="92" width="272">
+        </div>
+    </div>
+    <div class="row input-component">
+        <div class="col-md-2">
+            <input type="text" class="form-control" placeholder="Your word">
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-secondary mb-3">Search</button>
+        </div>
+    </div>
+    <div class="row card-component mb-5">
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <a href="listening">
+                    <img src="{{ url_for('static', filename='images/F2rMiyvaMAAYafx.jpg') }}" class="card-img-top">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Listening</h5>
+                    <p class="card-text">You can test your listening skills through it.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <a href="reading">
+                    <img src="{{ url_for('static', filename='images/F2rMiyvaMAAYafx.jpg') }}" class="card-img-top">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Reading</h5>
+                    <p class="card-text">YOU CAN TEST YOUR READING ABILITY HERE.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <a href="writing">
+                    <img src="{{ url_for('static', filename='images/F2rMiyvaMAAYafx.jpg') }}" class="card-img-top">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Writing</h5>
+                    <p class="card-text">Test</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 18rem; margin-bottom: auto;">
+                <img src="{{ url_for('static', filename='images/F2rMiyvaMAAYafx.jpg') }}" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Gym</h5>
+                    <p class="card-text">Enjoy the entire examination.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block js_script %}
+
+<script>
+
+
+
+</script>
+
+{% endblock %}

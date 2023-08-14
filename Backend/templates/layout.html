@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A korean learning website">
+    <meta name="keywords" content="korean learning, korean, learning, language learning, language">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ page_title }}</title>
+
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+        ::selection {
+            background-color: #0a2631;
+            color: white;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    {% block headstyle %}
+    {% endblock %}
+</head>
+
+<body>
+    <nav class="navbar bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24"
+                    class="d-inline-block align-text-top">
+                한국어 학습
+            </a>
+        </div>
+    </nav>
+
+    {% block body %}
+    {% endblock %}
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    {% block js_script %}
+    {% endblock %}
+
+</body>
+
+</html>

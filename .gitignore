@@ -1,0 +1,9 @@
+__pycache__
+Frontend/node_modules
+Frontend/package-lock.json
+Frontend/package.json
+venv
+Backend/__pycache__
+Collector/__pycache__
+instance
+whooshee
